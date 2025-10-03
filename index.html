@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC Obed Mateo Mendez Castaño 1107°</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Calculadora de Indice de Masa Corporal</h1>
+        <p class="subtitle">Conoce tu estado de salud</p>
+    </header>
+
+    <main>
+        <section class="calculator-section">
+            <div class="form-container">
+                <form id="imcForm">
+                    <div class="input-group">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="peso">Peso (kg)</label>
+                        <input type="number" id="peso" step="0.1" min="1" placeholder="Ej: 70.5" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="altura">Altura (m)</label>
+                        <input type="number" id="altura" step="0.01" min="0.5" max="3" placeholder="Ej: 1.75" required>
+                    </div>
+
+                    <button type="submit" class="btn-calcular">Calcular IMC</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="result-section" id="resultSection">
+            <div class="result-card">
+                <h2>Resultado</h2>
+                <div class="result-content">
+                    <p class="user-name" id="userName"></p>
+                    <div class="imc-value" id="imcValue">-</div>
+                    <div class="imc-classification" id="imcClassification"></div>
+                    <div class="imc-recommendation" id="imcRecommendation"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info-section">
+            <h3>Clasificación del IMC</h3>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">📉</div>
+                    <h4>Peso Bajo</h4>
+                    <p>Menor a 18.5</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">✅</div>
+                    <h4>Peso Normal</h4>
+                    <p>18.5 - 24.9</p>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📈</div>
+                    <h4>Sobrepeso</h4>
+                    <p>Mayor a 24.9</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="student-info">
+            <h3>Información del Proyecto</h3>
+            <p><strong>Estudiante:</strong> Obed Mateo Méndez Castaño</p>
+            <p><strong>Grado:</strong> Sección 1107</p>
+            <p><strong>Proyecto:</strong> Calculadora de Índice de Masa Corporal (IMC)</p>
+            <p><strong>Fecha:</strong> Octubre 2025</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
