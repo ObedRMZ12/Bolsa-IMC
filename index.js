@@ -1,3 +1,5 @@
+// Obed Mateo Mendez Castaño 1107°
+
 // Capturar el formulario
 const form = document.getElementById('imcForm');
 const resultSection = document.getElementById('resultSection');
@@ -78,3 +80,5 @@ inputs.forEach((input, index) => {
         }
     });
 });
+
+// Obed Mateo Mendez Castaño 1107°
